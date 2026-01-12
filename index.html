@@ -451,7 +451,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+<script>document.querySelector(".php-email-form").addEventListener("submit",function(e){e.preventDefault();this.querySelector(".loading").style.display="none";this.querySelector(".error-message").style.display="none";this.querySelector(".sent-message").style.display="block";this.reset();});</script>
+
 </body>
 
 </html>
