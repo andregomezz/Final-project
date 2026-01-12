@@ -387,7 +387,7 @@
           </div>
         </div>
 
-        <form id="fake-contact-form" action="#" data-aos="fade-up" data-aos-delay="300">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -452,10 +452,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-<script>
-document.getElementById("fake-contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();document.querySelector(".loading").style.display = "none";
-  document.querySelector(".error-message").style.display = "none"document.querySelector(".sent-message").style.display = "block";this.reset();});</script>
+  
 </body>
 
 </html>
