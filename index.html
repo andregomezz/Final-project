@@ -452,7 +452,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-<script>document.getElementById("fake-contact-form").addEventListener("submit",function(e){e.preventDefault();document.querySelector(".error-message").innerHTML="";document.querySelector(".sent-message").style.display="block";this.reset();});</script>
+<script>
+document.getElementById("fake-contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();document.querySelector(".loading").style.display = "none";
+  document.querySelector(".error-message").style.display = "none"document.querySelector(".sent-message").style.display = "block";this.reset();});</script>
 </body>
 
 </html>
