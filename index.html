@@ -138,7 +138,7 @@
             <div>
               <h4 class="title">Corporate Investment Advisory</h4>
               <p class="description">Advisory solutions for companies focused on investment evaluation, capital allocation, and financial decision-making aligned with strategic objectives.</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <a href="https://www.pucp.edu.pe/" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -147,7 +147,7 @@
             <div>
               <h4 class="title">Market Strategy</h4>
               <p class="description">Trading-focused solutions based on technical analysis, market structure, and price action, with disciplined risk management and continuous market monitoring.</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <a href="https://www.pucp.edu.pe/" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -156,7 +156,7 @@
             <div>
               <h4 class="title">Financial Analytics & Modeling</h4>
               <p class="description">Data-driven financial analytics and modeling solutions to support valuation, scenario analysis, and informed financial planning.</p>
-              <a href="service-details.html" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <a href="https://www.pucp.edu.pe/" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -387,7 +387,7 @@
           </div>
         </div>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+        <form id="fake-contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -452,7 +452,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script> document.getElementById("fake-contact-form").addEventListener("submit", function(e) {e.preventDefault();document.querySelector(".loading").style.display = "none";
+document.querySelector(".error-message").style.display = "none";document.querySelector(".sent-message").style.display = "block";this.reset();});</script>
 </body>
 
 </html>
